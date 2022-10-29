@@ -1,14 +1,13 @@
-import React from "react";
-import classes from './Card.module.css';
+import React from 'react';
 
 interface CardProps {
     children: React.ReactNode
 }
 
-const Card: React.FC<CardProps> = (props) => {
+const Card: React.FC<CardProps> = ({children}) => {
     return (
-        <div className={classes.card}>
-            {props.children}
+        <div className='card'>
+            {children}
         </div>
     )
 }
