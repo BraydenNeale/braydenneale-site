@@ -10,9 +10,7 @@ const LinkCard: React.FC<LinkCardProps> = ({ url, title }) => {
     return (
         <li className='link-card'>
             <Card>
-                <a href={url}>
-                    <h3>{title}</h3>
-                </a>
+                <h3 className='link-card__text'><a href={url}>{title}</a></h3>
             </Card>
         </li>
     );
